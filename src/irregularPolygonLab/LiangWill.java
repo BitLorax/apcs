@@ -4,12 +4,12 @@ import java.awt.geom.*;
 import java.util.ArrayList;
 import gpdraw.*;
 
-public class IrregularPolygon {
+public class LiangWill implements Polygon {
     private ArrayList<Point2D.Double> polygon;
-    public IrregularPolygon() {
+    public LiangWill() {
         polygon = new ArrayList<>();
     }
-    public IrregularPolygon(ArrayList<Point2D.Double> a) {
+    public LiangWill(ArrayList<Point2D.Double> a) {
         polygon = a;
     }
     public void add(Point2D.Double a) {
@@ -40,5 +40,8 @@ public class IrregularPolygon {
             b += polygon.get(i).getY() * polygon.get((i + 1) % polygon.size()).getX();
         }
         return Math.abs(.5 * (a - b));
+    }
+    public String getName() {
+        return "Will Liang";
     }
 }
