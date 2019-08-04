@@ -1,3 +1,4 @@
+/*
 package irregularPolygonLab;
 
 import java.awt.geom.*;
@@ -45,3 +46,4 @@ public class LiangWill implements Polygon {
         return "Will Liang";
     }
 }
+*/
